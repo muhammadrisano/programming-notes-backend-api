@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
-        message = "this is method get all program"
+        message: "this is method get all program"
     })
 })
 
@@ -34,3 +34,5 @@ router.delete('/:idProgram', (req, res, next) => {
         message: "this is method delete program"
     })
 })
+
+module.exports = router
